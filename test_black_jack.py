@@ -25,6 +25,15 @@ class TestBlackJack(unittest.TestCase):
     self.assertIsNone(deck.__str__())
 
 
+  def test_take_bet(self):
+
+    bet = 10
+    player = black_jack.Player()
+    result = player.take_bet()
+    self.assertEqual(result,bet)
+
+
 
 if __name__ == '__main__':
   unittest.main()
+  
